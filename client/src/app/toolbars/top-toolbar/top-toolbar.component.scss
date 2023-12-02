@@ -1,0 +1,27 @@
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+
+  .toolbar-button {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .toolbar-button:last-child {
+    margin-right: 0;
+  }
+
+  .toolbar-button:first-child {
+    margin-left: 0;
+  }
+}
