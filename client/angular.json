@@ -20,6 +20,7 @@
             "outputPath": "dist/client",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "sourceMap": true,
             "polyfills": [
               "zone.js"
             ],
@@ -36,6 +37,7 @@
           },
           "configurations": {
             "production": {
+              "sourceMap": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -71,7 +73,8 @@
               "buildTarget": "client:build:production"
             },
             "development": {
-              "buildTarget": "client:build:development"
+              "buildTarget": "client:build:development",
+
             }
           },
           "defaultConfiguration": "development"
