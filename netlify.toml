@@ -1,0 +1,7 @@
+[build]
+  base = "client/"
+  command = "npm run build"  # or "ng build --prod"
+  publish = "dist/client/browser"  # Update with your build output path
+
+[build.environment]
+  NODE_VERSION = "18"  # Specify the Node.js version here
