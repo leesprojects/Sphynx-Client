@@ -1,6 +1,12 @@
 
 <div class="toolbar">
-  <button class="toolbar-button">Dictionary</button>
-  <button class="toolbar-button">Phrases</button>
-  <button class="toolbar-button">Button 3</button>
+  @for (route of routes; track route.path) {
+    @if (route.path !== '') {
+      <div class="toolbar-button">
+        <a href="{{route.path}}">
+          <button class="toolbar-button">{{route.path}}</button>
+        </a>
+      </div>
+    }
+  }
 </div>

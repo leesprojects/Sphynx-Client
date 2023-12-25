@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { routes } from '../../app.routes';
 
 @Component({
   selector: 'app-top-toolbar',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './top-toolbar.component.scss'
 })
 export class TopToolbarComponent {
-
+  routes = routes
 }
