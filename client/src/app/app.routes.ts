@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { ExhibitComponent } from './@exhibit/exhibit.component';
+import { DashboardComponent } from '@Features/dashboard/dashboard.component';
 
 const appName = 'Project Spyhnx'
 
@@ -15,17 +15,17 @@ export const routes: Routes = [
     path: 'dashboard',
     title: appName,
     component: DashboardComponent,
-    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+    loadChildren: () => import('./@features/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
     path: 'playground',
     title: appName + ' - Playground',
-    loadChildren: () => import('./playground/playground.module').then(m => m.PlaygroundModule)
+    loadChildren: () => import('./@features/playground/playground.module').then(m => m.PlaygroundModule)
   },
   {
     path: 'indexed-db',
     title: appName + ' - IndexedDB',
-    loadChildren: () => import('./indexed-db/indexed-db.module').then(m => m.IndexedDBModule)
+    loadChildren: () => import('./@features/indexed-db/indexed-db.module').then(m => m.IndexedDBModule)
   },
   {
     path: 'exhibit',

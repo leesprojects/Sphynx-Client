@@ -1,5 +1,5 @@
+import { routes } from '@App/app.routes';
 import { Component } from '@angular/core';
-import { routes } from '../../app.routes';
 
 @Component({
   selector: 'app-top-toolbar',

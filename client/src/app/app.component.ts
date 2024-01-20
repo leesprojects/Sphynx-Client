@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { ToolbarsModule } from './toolbars/toolbars.module';
-import { IndexedDBModule } from './indexed-db/indexed-db.module';
+import { ToolbarsModule } from '@Features/toolbars/toolbars.module';
+import { IndexedDBModule } from '@Features/indexed-db/indexed-db.module';
 
 @Component({
   selector: 'app-root',
