@@ -1,0 +1,7 @@
+<div class="card"
+[class.--flex-direction-column]="flexDirection === 'column'"
+[class.--flex-direction-row]="flexDirection === 'row'"
+[class.border-style-standard]="borderStyle === 'standard'"
+>
+  <ng-content class="card__content"></ng-content>
+</div>

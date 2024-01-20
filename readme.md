@@ -37,10 +37,14 @@ The client is hosted via Netlify, while the backend is not currently setup
 * Score Board & Rank
   * Division system which relies on honour system
   * Gain a score based on RPE which accumulates forever
+  * 
 * Muscles
 * Exercises
 * Workouts
 * Routines
+* Improve my form
+  * Upload a video of your REP and get feedback
+  * Upload examples of correct form and unique exercises
 
 ## [3] Guest Portal
 

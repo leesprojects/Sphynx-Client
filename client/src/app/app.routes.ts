@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ShowcaseComponent } from './showcase/showcase.component';
+import { ExhibitComponent } from './@exhibit/exhibit.component';
 
 const appName = 'Project Spyhnx'
 
@@ -28,10 +28,10 @@ export const routes: Routes = [
     loadChildren: () => import('./indexed-db/indexed-db.module').then(m => m.IndexedDBModule)
   },
   {
-    path: 'showcase',
-    title: appName + ' - Showcase',
-    component: ShowcaseComponent,
-    loadChildren: () => import('./showcase/showcase.module').then(m => m.ShowcaseModule)
+    path: 'exhibit',
+    title: appName + ' - Exhibit',
+    component: ExhibitComponent,
+    loadChildren: () => import('./@exhibit/exhibit.module').then(m => m.ExhibitModule)
   },
   {
     path: '**',
