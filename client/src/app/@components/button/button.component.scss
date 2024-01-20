@@ -8,8 +8,28 @@
     height: 40px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    border: 1px solid #e0e0e0;
-    background-color: #fff;
-    color: #000;
+    box-shadow: 2px 2px 2px 0 rgba(34, 33, 33, 0.05);
+  }
+
+  .--primary {
+    background-color: var(--colour-primary);
+    color: var(--text-colour-primary);
+  }
+
+  .--secondary {
+    background-color: var(--colour-secondary);
+    color: var(--text-colour-secondary);
+  }
+
+  .--small {
+    width: 80px;
+  }
+
+  .--medium {
+    width: 120px;
+  }
+
+  .--large {
+    width: 160px;
   }
 }

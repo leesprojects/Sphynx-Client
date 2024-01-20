@@ -1,5 +1,6 @@
-import { routes } from '@App/app.routes';
+import { appRoutes } from '@App/app.routes';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-top-toolbar',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './top-toolbar.component.scss'
 })
 export class TopToolbarComponent {
-  routes = routes
+  routes = appRoutes
+
+  constructor(private router: Router) {}
+
+  onClick(route?: string) {
+    if (route) {
+      this.router.navigate([route]);
+    }
+  }
 }

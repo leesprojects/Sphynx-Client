@@ -1,12 +1,15 @@
 
-<div class="toolbar">
+<app-card class="toolbar" [flexDirection]="'row'">
+  <img src="assets/images/user-silhouette.svg" alt="logo" class="toolbar__profile" />
   @for (route of routes; track route.path) {
     @if (route.path !== '') {
-      <div class="toolbar-button">
-        <a href="{{route.path}}">
-          <button class="toolbar-button">{{route.path}}</button>
-        </a>
+      <div class="toolbar__buttons">
+        <app-button
+        [variation]="'secondary'"
+        [label]="route.path ?? ''"
+        (clickEvent)="onClick(route.path)"
+        ></app-button>
       </div>
     }
   }
-</div>
+</app-card>

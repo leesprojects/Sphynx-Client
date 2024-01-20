@@ -3,4 +3,13 @@ html, body, p, h1, h2, h3 {
   padding: 0;
 }
 
+//Colours
+:root {
+  --colour-primary: #348aec;
+  --colour-secondary: #ffffff;
+  --colour-tertiary: #000000;
 
+  --text-colour-primary: #fff;
+  --text-colour-secondary: #348aec;
+  --text-colour-tertiary: #000000;
+}

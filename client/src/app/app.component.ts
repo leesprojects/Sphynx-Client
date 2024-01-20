@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ToolbarsModule } from '@Features/toolbars/toolbars.module';
-import { IndexedDBModule } from '@Features/indexed-db/indexed-db.module';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +9,6 @@ import { IndexedDBModule } from '@Features/indexed-db/indexed-db.module';
   imports: [
     CommonModule,
     RouterOutlet,
-    IndexedDBModule,
     ToolbarsModule,
   ],
   providers: [],

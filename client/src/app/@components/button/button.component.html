@@ -1,3 +1,9 @@
-<div class="button">
+<app-card class="button"
+[class.--primary]="variation === 'primary'"
+[class.--secondary]="variation === 'secondary'"
+[class.--small]="size === 'small'"
+[class.--medium]="size === 'medium'"
+[class.--large]="size === 'large'"
+(click)="onClick()">
   <p>{{ label }}</p>
-</div>
+</app-card>

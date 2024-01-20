@@ -1,0 +1,9 @@
+<app-exhibit-frame>
+  <app-card>
+    @for (colour of colourStyles; track colour) {
+      <app-card [flexDirection]="'row'">
+        --{{ colour }}: <div class="colour-exhibit" [style.background-color]="getGlobalColour(colour)"></div>
+      </app-card>
+    }
+  </app-card>
+</app-exhibit-frame>

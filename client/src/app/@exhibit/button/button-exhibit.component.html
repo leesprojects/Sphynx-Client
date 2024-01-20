@@ -1,5 +1,22 @@
 <app-exhibit-frame>
-  <app-button
-  [label]="'Exhibit Button'"
-  ></app-button>
+  <app-card>
+    <app-card [flexDirection]="'row'" [borderStyle]="'shadow'">
+      <app-button
+      [variation]="'primary'"
+      [label]="'Primary'"
+      (clickEvent)="onClick()"
+      ></app-button>
+      <app-button
+      [variation]="'secondary'"
+      [label]="'Secondary'"
+      (clickEvent)="onClick()"
+      ></app-button>
+      <app-button
+      [variation]="'tertiary'"
+      [label]="'Tertiary'"
+      (clickEvent)="onClick()"
+      ></app-button>
+    </app-card>
+    <p>{{ buttonClickedMessage }}</p>
+  </app-card>
 </app-exhibit-frame>
