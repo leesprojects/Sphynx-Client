@@ -1,5 +1,5 @@
 <app-exhibit-frame>
-  <app-card>
+  <app-card [flexDirection]="'column'">
     <app-card [flexDirection]="'row'" [borderStyle]="'shadow'">
       <app-button
       [variation]="'primary'"
@@ -18,5 +18,24 @@
       ></app-button>
     </app-card>
     <p>{{ buttonClickedMessage }}</p>
+  </app-card>
+
+  <app-card [flexDirection]="'row'">
+    <p>Angular Material Component</p>
+    <button
+    mat-raised-button
+    color="primary"
+    matTooltip="Button tooltip"
+    >Primary</button>
+    <button
+    mat-raised-button
+    color="secondary"
+    matTooltip="Button tooltip"
+    >Secondary</button>
+    <button
+    mat-button
+    color="primary"
+    matTooltip="Button tooltip"
+    >Primary</button>
   </app-card>
 </app-exhibit-frame>
