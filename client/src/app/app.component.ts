@@ -9,7 +9,7 @@ import { ToolbarsModule } from '@Features/toolbars/toolbars.module';
   imports: [
     CommonModule,
     RouterOutlet,
-    ToolbarsModule,
+    ToolbarsModule
   ],
   providers: [],
   templateUrl: './app.component.html',
@@ -17,4 +17,6 @@ import { ToolbarsModule } from '@Features/toolbars/toolbars.module';
 })
 export class AppComponent {
   title = 'Project Sphynx';
+
+
 }

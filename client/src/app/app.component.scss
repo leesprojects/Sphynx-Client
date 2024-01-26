@@ -1,15 +1,11 @@
-.app-container {
+.main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-}
+  height: 100%;
+  width: 100%;
 
-.toolbar {
-  flex: 0 0 auto;
-  /* Add your toolbar styles here */
-}
-
-.dashboard {
-  flex: 1 1 auto;
-  /* Add your dashboard styles here */
+  .sidenav-container {
+    flex: 1;
+    display: flex;
+  }
 }

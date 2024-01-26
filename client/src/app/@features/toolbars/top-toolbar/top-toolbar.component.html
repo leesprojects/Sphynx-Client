@@ -1,15 +1,7 @@
 
-<app-card class="toolbar" [flexDirection]="'row'">
-  <img src="assets/images/user-silhouette.svg" alt="logo" class="toolbar__profile" />
-  @for (route of routes; track route.path) {
-    @if (route.path !== '') {
-      <div class="toolbar__buttons">
-        <app-button
-        [variation]="'secondary'"
-        [label]="route.path ?? ''"
-        (clickEvent)="onClick(route.path)"
-        ></app-button>
-      </div>
-    }
-  }
+<app-card class="toolbar mat-primary" [flexDirection]="'row'">
+  <button mat-fab extended color="primary" (click)="emitToggleSidenav()">
+    <mat-icon>menu</mat-icon>
+    Menu
+  </button>
 </app-card>

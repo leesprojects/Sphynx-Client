@@ -1,5 +1,5 @@
 import { appRoutes } from '@App/app.routes';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,11 +11,17 @@ import { Router } from '@angular/router';
 export class TopToolbarComponent {
   routes = appRoutes
 
+  @Output() toggleSidenav = new EventEmitter<void>();
+
   constructor(private router: Router) {}
 
   onClick(route?: string) {
     if (route) {
       this.router.navigate([route]);
     }
+  }
+
+  emitToggleSidenav() {
+    this.toggleSidenav.emit();
   }
 }
