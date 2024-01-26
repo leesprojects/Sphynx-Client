@@ -6,6 +6,7 @@ import { ButtonExhibitComponent } from './button/button-exhibit.component';
 import { StylesExhibitComponent } from './styles/styles-exhibit.component';
 import { CardComponent } from '@Components/card/card.component';
 import { GridExhibitComponent } from './grid-exhibit/grid-exhibit.component';
+import { FeatureFrameComponent } from '@Components/feature-frame/feature-frame.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { GridExhibitComponent } from './grid-exhibit/grid-exhibit.component';
     CardExhibitComponent,
     ButtonExhibitComponent,
     StylesExhibitComponent,
-    GridExhibitComponent
+    GridExhibitComponent,
+    FeatureFrameComponent
   ]
 })
 export class ExhibitModule { }

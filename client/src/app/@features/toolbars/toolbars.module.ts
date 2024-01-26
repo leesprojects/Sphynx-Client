@@ -9,6 +9,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 const components = [
   TopToolbarComponent,
@@ -26,7 +27,8 @@ const components = [
     MatCheckboxModule,
     FormsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule
   ]
 })
 export class ToolbarsModule { }

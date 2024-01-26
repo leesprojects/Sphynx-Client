@@ -4,7 +4,7 @@
   mat-sidenav {
     max-width: 300px;
     box-shadow: 3px 3px 2px 1px rgba(84, 84, 88, 0.2);
-    background-color: var(--colour-primary);
+    background-color: var(--colour-secondary);
 
     .sidenav-popover {
       display: flex;
@@ -23,14 +23,12 @@
   }
 
   .sidenav-app-container {
-    width: 100%;
-    flex: 1;
     display: flex;
+    flex: 1;
 
     .sidenav-app-content {
-      width: 100%;
-      flex: 1;
       display: flex;
+      flex: 1;
       flex-direction: column;
     }
   }

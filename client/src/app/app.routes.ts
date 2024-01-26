@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { ExhibitComponent } from './@exhibit/exhibit.component';
 import { DashboardComponent } from '@Features/dashboard/dashboard.component';
-import { appName } from './global-values';
+import { APP_NAME } from './global-values';
 import { TrainerDashboardComponent } from '@Features/trainer-dashboard/trainer-dashboard.component';
 
 export const APP_ROUTE_TO_TITLE_MAP = new Map<string, string>([
@@ -13,30 +13,30 @@ export const APP_ROUTE_TO_TITLE_MAP = new Map<string, string>([
 export const APP_ROUTES: Routes = [
   {
     path: '',
-    title: appName,
+    title: APP_NAME,
     redirectTo: '/dashboard',
     pathMatch: 'full'
   },
   {
     path: 'dashboard',
-    title: appName,
+    title: APP_NAME,
     component: DashboardComponent,
     loadChildren: () => import('./@features/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
     path: 'exhibit',
-    title: appName + ' - Exhibit',
+    title: APP_NAME + ' - Exhibit',
     component: ExhibitComponent,
     loadChildren: () => import('./@exhibit/exhibit.module').then(m => m.ExhibitModule)
   },
   {
     path: 'trainer-dashboard',
-    title: appName + ' - Trainer Dashboard',
+    title: APP_NAME + ' - Trainer Dashboard',
     component: TrainerDashboardComponent
   },
   {
     path: '**',
-    title: appName,
+    title: APP_NAME,
     redirectTo: '/dashboard',
     pathMatch: 'full'
   }

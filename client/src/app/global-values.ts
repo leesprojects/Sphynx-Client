@@ -1,1 +1,1 @@
-export const appName = 'Project Spyhnx'
+export const APP_NAME = 'Project Spyhnx'
