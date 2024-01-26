@@ -1,4 +1,4 @@
-import { appRoutes } from '@App/app.routes';
+import { APP_ROUTES } from '@App/app.routes';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrl: './top-toolbar.component.scss'
 })
 export class TopToolbarComponent {
-  routes = appRoutes
+  routes = APP_ROUTES
 
   @Output() toggleSidenav = new EventEmitter<void>();
 

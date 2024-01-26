@@ -4,7 +4,13 @@ import { DashboardComponent } from '@Features/dashboard/dashboard.component';
 import { appName } from './global-values';
 import { TrainerDashboardComponent } from '@Features/trainer-dashboard/trainer-dashboard.component';
 
-export const appRoutes: Routes = [
+export const APP_ROUTE_TO_TITLE_MAP = new Map<string, string>([
+  ['dashboard', 'Dashboard'],
+  ['exhibit', 'Exhibit'],
+  ['trainer-dashboard', 'Trainer Dashboard']
+]);
+
+export const APP_ROUTES: Routes = [
   {
     path: '',
     title: appName,
