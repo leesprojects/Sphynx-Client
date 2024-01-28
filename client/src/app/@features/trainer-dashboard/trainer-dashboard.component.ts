@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 import { MatDividerModule } from '@angular/material/divider';
 import { FeatureFrameComponent } from '@Components/feature-frame/feature-frame.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 export type ExerciseCategory = 'Strength' | 'Flexibility' | 'Calisthenics' | 'Skill' | 'Cardio' | 'Other';
 
@@ -19,7 +20,9 @@ export interface IExerciseCard {
   imports: [
     MatTableModule,
     MatDividerModule,
-    FeatureFrameComponent
+    FeatureFrameComponent,
+    DragDropModule,
+
   ],
   templateUrl: './trainer-dashboard.component.html',
   styleUrl: './trainer-dashboard.component.scss'

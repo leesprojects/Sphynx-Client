@@ -2,7 +2,7 @@
   <div class="dashboard-container">
     <div class="cards-container">
       @for (card of exampleExerciseCards; track $index) {
-        <div class="card">
+        <div class="card" cdkDrag>
           <h3>{{ card.name }}</h3>
           <p>{{ card.category }}</p>
         </div>
