@@ -1,8 +1,8 @@
 {
-  "name": "client",
-  "short_name": "client",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Project Spyhnx Client",
+  "short_name": "Project Sphynx",
+  "theme_color": "#673ab7",
+  "background_color": "#673ab7",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
