@@ -14,7 +14,7 @@ export const APP_ROUTES: Routes = [
   {
     path: '',
     title: APP_NAME,
-    redirectTo: '/dashboard',
+    redirectTo: '/trainer-dashboard',
     pathMatch: 'full'
   },
   {
@@ -24,15 +24,16 @@ export const APP_ROUTES: Routes = [
     loadChildren: () => import('./@features/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
+    path: 'trainer-dashboard',
+    title: APP_NAME + ' - Trainer Dashboard',
+    component: TrainerDashboardComponent,
+    loadChildren: () => import('./@features/trainer-dashboard/trainer-dashboard.module').then(m => m.TrainerDashboardModule)
+  },
+  {
     path: 'exhibit',
     title: APP_NAME + ' - Exhibit',
     component: ExhibitComponent,
     loadChildren: () => import('./@exhibit/exhibit.module').then(m => m.ExhibitModule)
-  },
-  {
-    path: 'trainer-dashboard',
-    title: APP_NAME + ' - Trainer Dashboard',
-    component: TrainerDashboardComponent
   },
   {
     path: '**',

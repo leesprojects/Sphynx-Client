@@ -1,0 +1,37 @@
+.workouts-container {
+  padding: 20px;
+
+  .cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+
+    .card {
+      background-color: rgb(233, 228, 228);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: #777;
+    }
+  }
+
+  mat-divider {
+    margin: 64px 0px;
+  }
+}

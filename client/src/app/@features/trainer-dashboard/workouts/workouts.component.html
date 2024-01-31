@@ -1,0 +1,35 @@
+<app-card class="workouts-container">
+
+  <div class="cards-table">
+    <table mat-table [dataSource]="workouts" class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let workout">{{ workout.id }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let workout">{{ workout.name }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef> Description </th>
+        <td mat-cell *matCellDef="let workout">{{ workout.description }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="category">
+        <th mat-header-cell *matHeaderCellDef> Category </th>
+        <td mat-cell *matCellDef="let workout">{{ workout.category }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="exercises">
+        <th mat-header-cell *matHeaderCellDef> Exercises </th>
+        <td mat-cell *matCellDef="let workout">{{ generateRenderableExercises(workout.exercises) }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="columnsToRender"></tr>
+      <tr mat-row *matRowDef="let row; columns: columnsToRender;"></tr>
+    </table>
+  </div>
+
+</app-card>
