@@ -29,6 +29,6 @@ export class DashboardComponent {
   constructor(private _router: Router) {}
 
   navigateToTrainerDashboard(): void {
-    this._router.navigate(['/trainer-dashboard']);
+    this._router.navigate(['/trainer']);
   }
 }

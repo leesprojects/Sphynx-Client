@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ToolbarsModule } from '@Features/toolbars/toolbars.module';
-import { TrainerDashboardModule } from '@Features/trainer-dashboard/trainer-dashboard.module';
+import { TrainerModule } from '@Features/trainer/trainer.module';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import { TrainerDashboardModule } from '@Features/trainer-dashboard/trainer-dash
     CommonModule,
     RouterOutlet,
     ToolbarsModule,
-    TrainerDashboardModule
+    TrainerModule
   ],
   providers: [],
   templateUrl: './app.component.html',

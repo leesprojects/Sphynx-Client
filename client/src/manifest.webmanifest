@@ -1,7 +1,7 @@
 {
   "name": "Project Spyhnx Client",
   "short_name": "Project Sphynx",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "theme_color": "rgb(103, 58, 183)",
   "background_color": "rgb(103, 58, 183)",
   "display": "standalone",

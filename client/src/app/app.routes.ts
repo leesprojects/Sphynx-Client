@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { ExhibitComponent } from './@exhibit/exhibit.component';
 import { DashboardComponent } from '@Features/dashboard/dashboard.component';
 import { APP_NAME } from './global-values';
-import { TrainerDashboardComponent } from '@Features/trainer-dashboard/trainer-dashboard.component';
+import { TrainerComponent } from '@Features/trainer/trainer.component';
 
 export const APP_ROUTE_TO_TITLE_MAP = new Map<string, string>([
   ['dashboard', 'Dashboard'],
@@ -13,8 +13,7 @@ export const APP_ROUTE_TO_TITLE_MAP = new Map<string, string>([
 export const APP_ROUTES: Routes = [
   {
     path: '',
-    title: APP_NAME,
-    redirectTo: '/trainer-dashboard',
+    redirectTo: '/trainer',
     pathMatch: 'full'
   },
   {
@@ -24,10 +23,10 @@ export const APP_ROUTES: Routes = [
     loadChildren: () => import('./@features/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
-    path: 'trainer-dashboard',
-    title: APP_NAME + ' - Trainer Dashboard',
-    component: TrainerDashboardComponent,
-    loadChildren: () => import('./@features/trainer-dashboard/trainer-dashboard.module').then(m => m.TrainerDashboardModule)
+    path: 'trainer',
+    title: APP_NAME + ' - Trainer',
+    component: TrainerComponent,
+    loadChildren: () => import('@Features/trainer/trainer.module').then(m => m.TrainerModule)
   },
   {
     path: 'exhibit',
@@ -37,8 +36,7 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: '**',
-    title: APP_NAME,
-    redirectTo: '/dashboard',
+    redirectTo: '/trainer',
     pathMatch: 'full'
   }
 ];
