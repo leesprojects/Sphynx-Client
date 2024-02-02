@@ -1,5 +1,5 @@
 [build]
-  base = "client/"
+  base = "/"
   command = "npm run build"  # or "ng build --prod"
   publish = "dist/client/browser"  # Update with your build output path
 

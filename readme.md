@@ -1,54 +1,32 @@
-# Project Sphynx
+# Client
 
-## Description
-A multi-purpose full-stack web application used for various goals and needs in my daily life.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
 
-The priority for features are:
+## Development server
 
-1. Spanish Study feature, mainly consisting of a flashcard-like system, dictionary and word/concept priorities.
-2. A lite version of Gym-Seven with the goal of moving my Notion 'Gym Progress' database and UI over to this app
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Specification
-An Angular - ExpressJS application utilising a relational SQL database.
-The client is hosted via Netlify, while the backend is not currently setup
+## Code scaffolding
 
-## [1] Spanish Study
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Functionality
+## Build
 
-* Dictionary
-  * English to Spanish
-* Flashcard Matching
-  * 1 English to 4+ Spanish
-  * 4 English to 4 Spanish
-  * X English to Y Spanish
-* 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## [2] Gym-Seven Lite
+## Running unit tests
 
-### Functionality
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-* Dashboard
-  * Navigation
-  * Stats overview
-  * Quick-start workout
-* Profile
-  * Profile Image, username, password change
-* Score Board & Rank
-  * Division system which relies on honour system
-  * Gain a score based on RPE which accumulates forever
-  * 
-* Muscles
-* Exercises
-* Workouts
-* Routines
-* Improve my form
-  * Upload a video of your REP and get feedback
-  * Upload examples of correct form and unique exercises
+## Running end-to-end tests
 
-## [3] Guest Portal
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-### Functionality
+## Further help
 
-## About
- 
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+### Ignore
+
+Adding section to Kick Netlify off
