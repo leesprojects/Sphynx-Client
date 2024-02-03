@@ -3,7 +3,6 @@ import { MatTableModule } from '@angular/material/table';
 import { MatDividerModule } from '@angular/material/divider';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { CardComponent } from '@Components/card/card.component';
-import { HARDCODED_EXERCISES } from '../dashboard/trainer-dashboard-hardcoded-data';
 import { MatTabsModule } from '@angular/material/tabs';
 import { CommonModule } from '@angular/common';
 import { ExerciseDataService } from '@App/@data/exercises.data.service';
@@ -28,7 +27,7 @@ export class TrainerExercisesComponent {
   columnsToRender: string[] = ['id', 'name', 'description', 'category', 'weighted'];
 
   constructor(private _exercisesDataService: ExerciseDataService) {
-    this._exercisesDataService.getExercises().then(exercises => {
+    this._exercisesDataService.getAllExercises().then(exercises => {
       this.exercises = exercises;
     });
   }
