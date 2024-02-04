@@ -5,12 +5,10 @@
 
       <div class="popover-navigation-buttons-container">
         @for (route of routesToRender; track $index) {
-          @if (routeToTitleMap.get(route.path ?? '')) {
-            <button mat-fab extended color="primary" (click)="onNavigationButtonClick(route)">
-              <mat-icon>menu</mat-icon>
-              {{ routeToTitleMap.get(route.path ?? '') }}
-            </button>
-          }
+          <button mat-fab extended color="primary" (click)="onNavigationButtonClick(route)">
+            <mat-icon>menu</mat-icon>
+            {{ routeToTitleMap.get(route.path ?? '') }}
+          </button>
         }
       </div>
 

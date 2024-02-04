@@ -12,12 +12,14 @@ export class SidenavComponent {
   private _routes = APP_ROUTES;
   routeToTitleMap = APP_ROUTE_TO_TITLE_MAP;
 
-  routesToRender: Route[] = this._routes.filter(route => route.path !== '**');
+  routesToRender: Route[];
   sidenavToggled = false;
 
   constructor(
     private _router: Router
-  ) {}
+  ) {
+    this.routesToRender = this._routes.filter(route => !!route.component);
+  }
 
   onNavigationButtonClick(route: Route): void {
     this._router.navigate([route.path]);

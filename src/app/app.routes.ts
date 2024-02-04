@@ -1,13 +1,15 @@
-import { Routes } from '@angular/router';
-import { ExhibitComponent } from './@exhibit/exhibit.component';
+import { ExhibitComponent } from '@Exhibit/exhibit.component';
 import { DashboardComponent } from '@Features/dashboard/dashboard.component';
-import { APP_NAME } from './global-values';
 import { TrainerComponent } from '@Features/trainer/trainer.component';
+import { UserComponent } from '@Features/user/user.component';
+import { Routes } from '@angular/router';
+import { APP_NAME } from './global-values';
 
 export const APP_ROUTE_TO_TITLE_MAP = new Map<string, string>([
   ['dashboard', 'Dashboard'],
+  ['trainer', 'Trainer'],
   ['exhibit', 'Exhibit'],
-  ['trainer-dashboard', 'Trainer Dashboard']
+  ['profile', 'Profile']
 ]);
 
 export const APP_ROUTES: Routes = [
@@ -33,6 +35,12 @@ export const APP_ROUTES: Routes = [
     title: APP_NAME + ' - Exhibit',
     component: ExhibitComponent,
     loadChildren: () => import('./@exhibit/exhibit.module').then(m => m.ExhibitModule)
+  },
+  {
+    path: 'profile',
+    title: APP_NAME + ' - Profile',
+    component: UserComponent,
+    loadChildren: () => import('./@features/user/user.module').then(m => m.UserModule)
   },
   {
     path: '**',
