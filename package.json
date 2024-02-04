@@ -1,7 +1,10 @@
 {
   "name": "sphynx-client",
-  "version": "0.0.0",
-  "engines": { "node": "18.19.0", "npm": "9.1.2" },
+  "version": "0.0.1",
+  "engines": {
+    "node": "18.19.0",
+    "npm": "9.1.2"
+  },
   "scripts": {
     "start": "ng serve  --configuration development",
     "build": "ng build",
