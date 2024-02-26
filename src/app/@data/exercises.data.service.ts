@@ -5,10 +5,12 @@ import { APIService } from "../api.service";
 @Injectable({ providedIn: 'root' })
 export class ExerciseDataService {
 
-  constructor(private _apiService: APIService) {}
+  constructor(
+    private _apiService: APIService
+  ) {
+  }
 
   getAllExercises(): Promise<IExercise[]> {
     return this._apiService.get('exercise');
   }
-
 }

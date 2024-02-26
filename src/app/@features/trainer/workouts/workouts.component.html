@@ -1,6 +1,5 @@
 <app-card class="workouts-container">
-
-  <div class="cards-table">
+  <div class="cards-container">
     <table mat-table [dataSource]="workouts" class="mat-elevation-z8">
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef> ID </th>
@@ -31,5 +30,4 @@
       <tr mat-row *matRowDef="let row; columns: columnsToRender;"></tr>
     </table>
   </div>
-
 </app-card>

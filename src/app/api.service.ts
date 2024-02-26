@@ -1,10 +1,9 @@
+import { environment } from "@Env/environment";
 import { Injectable } from "@angular/core";
-import { API_URL } from "./global-values";
 
 @Injectable({ providedIn: 'root' })
 export class APIService {
-
-  apiUrl = API_URL;
+  apiUrl = environment.API_URL;
 
   constructor() {
     this.apiHandshake();
