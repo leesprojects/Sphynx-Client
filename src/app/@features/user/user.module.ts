@@ -5,9 +5,12 @@ import { AccountComponent } from './account/account.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FeatureFrameComponent } from '@Components/feature-frame/feature-frame.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { CardComponent } from '@Components/card/card.component';
 
 const components = [
-  UserComponent
+  UserComponent,
+  ProfileComponent,
+  AccountComponent
 ]
 
 @NgModule({
@@ -16,9 +19,8 @@ const components = [
   imports: [
     CommonModule,
     FeatureFrameComponent,
-    ProfileComponent,
-    AccountComponent,
-    MatTabsModule
+    MatTabsModule,
+    CardComponent
   ]
 })
 export class UserModule { }

@@ -1,19 +1,47 @@
-html, body, p, h1, h2, h3 {
-  margin: 0;
-  padding: 0;
-}
-
 //Colours
 :root {
   --colour-primary: #673ab7;
-  // --colour-primary: #348aec;
   --colour-secondary: #ffffff;
   --colour-tertiary: #000000;
 
   --text-colour-primary: #fff;
   --text-colour-secondary: #348aec;
   --text-colour-tertiary: #000000;
+
+  html, body, p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  //Typography
+  h1 {
+    padding-bottom: 12px;
+    font-weight: 500;
+  }
+
+  h2 {
+
+  }
+
+  h3 {
+
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .text-bold {
+    font-weight: 500;
+  }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

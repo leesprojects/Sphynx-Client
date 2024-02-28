@@ -1,41 +1,34 @@
-<app-exhibit-frame>
-  <app-card [flexDirection]="'column'">
-    <app-card [flexDirection]="'row'" [borderStyle]="'shadow'">
-      <app-button
-      [variation]="'primary'"
-      [label]="'Primary'"
-      (clickEvent)="onClick()"
-      ></app-button>
-      <app-button
-      [variation]="'secondary'"
-      [label]="'Secondary'"
-      (clickEvent)="onClick()"
-      ></app-button>
-      <app-button
-      [variation]="'tertiary'"
-      [label]="'Tertiary'"
-      (clickEvent)="onClick()"
-      ></app-button>
+<app-exhibit-frame [title]="'Button'">
+  <app-card>
+    <app-card [flexDirection]="'column'">
+      <p>Custom Component</p>
+      <app-card [flexDirection]="'row'">
+        <app-button
+          [variation]="'primary'"
+          [label]="'Primary'"
+          (clickEvent)="onClick()"
+        />
+        <app-button
+          [variation]="'secondary'"
+          [label]="'Secondary'"
+          (clickEvent)="onClick()"
+        />
+        <app-button
+          [variation]="'tertiary'"
+          [label]="'Tertiary'"
+          (clickEvent)="onClick()"
+        />
+      </app-card>
+      <p>{{ buttonClickedMessage }}</p>
     </app-card>
-    <p>{{ buttonClickedMessage }}</p>
-  </app-card>
 
-  <app-card [flexDirection]="'row'">
-    <p>Angular Material Component</p>
-    <button
-    mat-raised-button
-    color="primary"
-    matTooltip="Button tooltip"
-    >Primary</button>
-    <button
-    mat-raised-button
-    color="secondary"
-    matTooltip="Button tooltip"
-    >Secondary</button>
-    <button
-    mat-button
-    color="primary"
-    matTooltip="Button tooltip"
-    >Primary</button>
+    <app-card [flexDirection]="'column'">
+      <p>Angular Material Component</p>
+      <app-card [flexDirection]="'row'">
+        <button mat-raised-button color="primary" matTooltip="Button tooltip">Primary</button>
+        <button mat-raised-button color="secondary"matTooltip="Button tooltip">Secondary</button>
+        <button mat-button color="primary" matTooltip="Button tooltip">Primary</button>
+      </app-card>
+    </app-card>
   </app-card>
 </app-exhibit-frame>

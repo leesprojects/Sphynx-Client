@@ -1,8 +1,4 @@
-<div class="exhibit-frame"
-[class.frame-size--small]="size === 'small'"
-[class.frame-size--medium]="size === 'medium'"
-[class.frame-size--large]="size === 'large'"
-[class.frame-size--fill]="size === 'fill'"
->
-  <ng-content></ng-content>
+<h2>{{ title }}</h2>
+<div class="exhibit-frame">
+  <ng-content/>
 </div>

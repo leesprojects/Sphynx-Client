@@ -26,7 +26,9 @@ export class TrainerExercisesComponent {
   exercises: IExercise[];
   columnsToRender: string[] = ['id', 'name', 'description', 'category', 'weighted'];
 
-  constructor(private _exercisesDataService: ExerciseDataService) {
+  constructor(
+    private _exercisesDataService: ExerciseDataService
+  ) {
     this._exercisesDataService.getAllExercises().then(exercises => {
       this.exercises = exercises;
     });

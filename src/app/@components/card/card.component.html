@@ -1,8 +1,13 @@
 <div class="card"
-[class.--flex-direction-column]="flexDirection === 'column'"
-[class.--flex-direction-row]="flexDirection === 'row'"
-[class.--border-style-standard]="borderStyle === 'standard'"
-[class.--border-style-shadow]="borderStyle === 'shadow'"
+  [class.--flex-direction-column]="flexDirection === 'column'"
+  [class.--flex-direction-row]="flexDirection === 'row'"
+  [class.--border-style-standard]="borderStyle === 'standard'"
+  [class.--border-style-shadow]="borderStyle === 'shadow'"
+  [class.--padding-standard]="padding === 'standard'"
+  [class.--padding-light]="padding === 'light'"
+  [class.--padding-heavy]="padding === 'heavy'"
+  [style.justify-content]="justifyContent"
+  [style.align-items]="alignItems"
 >
-  <ng-content class="card__content"></ng-content>
+  <ng-content/>
 </div>

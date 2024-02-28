@@ -1,1 +1,26 @@
-<p>User Profile</p>
+<app-card class="profile-container">
+
+  <app-card class="profile-header" [alignItems]="'center'">
+    <img src="/assets/images/profile_placeholder.jpg" alt="Profile Picture" class="profile-image"/>
+    <h1 class="text-bold">Lee Stevens</h1>
+  </app-card>
+
+  <app-card class="profile-favourites " [elevation]="'highlight'">
+    <h1 class="text-bold">Favourites</h1>
+
+    <p>Exercises</p>
+    <app-card>
+      <p>$Placeholder</p>
+    </app-card>
+
+    <p>Workouts</p>
+    <app-card>
+      <p>$Placeholder</p>
+    </app-card>
+
+    <p>Routines</p>
+    <app-card>
+      <p>$Placeholder</p>
+    </app-card>
+  </app-card>
+</app-card>

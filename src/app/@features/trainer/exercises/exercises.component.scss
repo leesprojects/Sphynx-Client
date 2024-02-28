@@ -1,5 +1,9 @@
 .exercises-container {
-  padding: 20px;
+  width: 100%;
+
+  mat-tab-group {
+    width: 100%;
+  }
 
   .cards-container {
     width: 100%;
