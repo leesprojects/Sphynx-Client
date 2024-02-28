@@ -28,7 +28,6 @@
       "@Components/*": ["app/@components/*"],
       "@Features/*": ["app/@features/*"],
       "@Exhibit/*": ["app/@exhibit/*"],
-      "@Env/*": ["environments/*"],
       "@App/*": ["app/*"],
     },
   },
