@@ -1,11 +1,14 @@
 import { Injectable } from "@angular/core";
+import { environment } from "environments/environment";
 
 @Injectable({ providedIn: 'root' })
 export class APIService {
   apiUrl = process.env['NG_APP_API_URL'] as string;
+  apiUrlFromEnv = environment.ENV_NAME;
+  envName = process.env['NG_APP_ENV_NAME'] as string;
 
   constructor() {
-    console.log('API URL:', this.apiUrl)
+    console.log('API URL:', this.apiUrl, ` for Environment: ${this.envName}, the EnvName is ${this.apiUrlFromEnv}`)
     this.apiHandshake();
   }
 
