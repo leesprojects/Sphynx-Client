@@ -22,7 +22,7 @@ export class APIService {
   get(endpoint: string): Promise<any> {
     const getUrl = `${this.apiUrl}${endpoint}`;
     return fetch(getUrl).then(res => {
-      console.info(`GET ${endpoint}: success`);
+      console.info(`GET ${this.apiUrl}${endpoint}: success`);
       return Promise.resolve(res.json())
     }).catch(() => {
       console.info(`GET ${endpoint}: failed`);
