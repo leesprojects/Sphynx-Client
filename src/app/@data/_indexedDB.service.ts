@@ -1,4 +1,3 @@
-import { IExercise } from "@App/@models/trainer";
 import { NgModule } from "@angular/core";
 import { NgxIndexedDBModule, NgxIndexedDBService } from "ngx-indexed-db";
 import { DB_CONFIG } from "./_indexedDB";

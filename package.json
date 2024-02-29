@@ -11,7 +11,6 @@
     "build-watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test-watch": "ng test --watch",
-
     "upgrade": "ng update @angular/core @angular/cli",
     "cache-clean": "ng cache clean"
   },
@@ -38,6 +37,7 @@
     "@angular-devkit/build-angular": "^17.2.0",
     "@angular/cli": "^17.2.0",
     "@angular/compiler-cli": "^17.2.0",
+    "@ngx-env/builder": "^17.2.3",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
