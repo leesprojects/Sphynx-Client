@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ToolbarsModule } from '@Features/toolbars/toolbars.module';
 import { TrainerModule } from '@Features/trainer/trainer.module';
+import { IndexedDBModule } from './@data/_indexedDB.service';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { TrainerModule } from '@Features/trainer/trainer.module';
     CommonModule,
     RouterOutlet,
     ToolbarsModule,
-    TrainerModule
+    TrainerModule,
+    IndexedDBModule
   ],
   providers: [],
   templateUrl: './app.component.html',
