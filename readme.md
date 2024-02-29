@@ -1,8 +1,19 @@
 # Sphynx-Client
 
-Created with Angular CLI 17.0.5, but am upgrading as Angular CLI does.
+Created with Angular CLI 17.0.5 - Now ^17.2.0.
 
 # Heroku
 
-1. `Heroku login`
-2. `Heroku logs`
+### Commands
+
+``` SHELL
+  "heroku-start": "node server.js",
+  "heroku-postbuild": "ng build --configuration production",
+  "heroku-logs": "heroku logs --tail --app project-sphynx-client",
+```
+
+# Useful Commands
+
+``` SHELL
+rmdir client/node_modules
+```
