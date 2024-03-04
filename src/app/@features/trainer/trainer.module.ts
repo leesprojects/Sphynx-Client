@@ -6,8 +6,8 @@ import { FeatureFrameComponent } from '@Components/feature-frame/feature-frame.c
 import { MatDividerModule } from '@angular/material/divider';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TrainerRoutinesComponent } from './routines/routines.component';
-import { TrainerWorkoutsComponent } from './workouts/workouts.component';
+import { WorkoutsModule } from './workouts/workouts.module';
+import { RoutinesModule } from './routines/routines.module';
 
 @NgModule({
   declarations: [
@@ -20,8 +20,8 @@ import { TrainerWorkoutsComponent } from './workouts/workouts.component';
     MatDividerModule,
     MatTabsModule,
     ExercisesModule,
-    TrainerWorkoutsComponent,
-    TrainerRoutinesComponent //Replace with modules
+    WorkoutsModule,
+    RoutinesModule
   ]
 })
 export class TrainerModule {

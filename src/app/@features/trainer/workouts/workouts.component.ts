@@ -1,22 +1,9 @@
-import { CardComponent } from '@Components/card/card.component';
-import { DragDropModule } from '@angular/cdk/drag-drop';
 import { Component } from '@angular/core';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatTableModule } from '@angular/material/table';
 import { HARDCODED_WORKOUTS } from '../trainer-dashboard-hardcoded-data';
-import { CommonModule } from '@angular/common';
 import { IExercise } from '../../../@models/trainer';
 
 @Component({
   selector: 'app-trainer-workouts',
-  standalone: true,
-  imports: [
-    CommonModule,
-    MatTableModule,
-    MatDividerModule,
-    DragDropModule,
-    CardComponent
-  ],
   templateUrl: './workouts.component.html',
   styleUrl: './workouts.component.scss'
 })
