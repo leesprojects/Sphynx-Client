@@ -1,6 +1,6 @@
 <div class="feature-frame-container"
-  [class.--flex-direction-column]="flexDirection === 'column'"
-  [class.--flex-direction-row]="flexDirection === 'row'"
+  [style.flex-direction]="flexDirectionRecord[flexDirection]"
+  [style.padding]="paddingRecord[padding]"
 >
-  <ng-content></ng-content>
+  <ng-content/>
 </div>

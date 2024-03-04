@@ -1,11 +1,8 @@
+import { ComponentPadding, ComponentFlexDirection, ComponentElevation, ComponentJustifyContent } from '@App/@models/components';
 import { Component, HostBinding, Input } from '@angular/core';
 
 export type CardVariation = 'standard' | 'outlined' | 'raised';
-export type CardPadding = 'none' | 'standard' | 'light' | 'heavy';
 export type CardBorderStyle = 'standard' | 'shadow' | 'none';
-export type CardFlexDirection = 'row' | 'column';
-export type CardElevation = 'none' | 'highlight' | 'raised';
-export type CardJustifyContent = 'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around' | 'space-evenly';
 
 @Component({
   selector: 'app-card',
@@ -14,13 +11,12 @@ export type CardJustifyContent = 'flex-start' | 'center' | 'flex-end' | 'space-b
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  // @Input() variation: CardVariation = 'standard';
-  @Input() padding: CardPadding = 'standard';
+  @Input() padding: ComponentPadding = 'medium';
   @Input() borderStyle: CardBorderStyle = 'none';
-  @Input() flexDirection: CardFlexDirection = 'column';
-  @Input() elevation: CardElevation = 'none';
-  @Input() justifyContent: CardJustifyContent = 'flex-start';
-  @Input() alignItems: CardJustifyContent = 'flex-start';
+  @Input() flexDirection: ComponentFlexDirection = 'column';
+  @Input() elevation: ComponentElevation = 'none';
+  @Input() justifyContent: ComponentJustifyContent = 'flex-start';
+  @Input() alignItems: ComponentJustifyContent = 'flex-start';
 
   @HostBinding('class.mat-elevation-z2') get isHighlightElevation() {
     return this.elevation === 'highlight';
@@ -29,4 +25,16 @@ export class CardComponent {
   @HostBinding('class.mat-elevation-z6') get isRaisedElevation() {
     return this.elevation === 'raised';
   }
+
+  flexDirectionRecord: Record<ComponentFlexDirection, string> = {
+    column: 'column',
+    row: 'row'
+  };
+
+  paddingRecord: Record<ComponentPadding, string> = {
+    none: '0',
+    small: '0.5rem',
+    medium: '1rem',
+    large: '2rem'
+  };
 }

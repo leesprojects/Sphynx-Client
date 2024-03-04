@@ -7,15 +7,6 @@
     width: 100%;
   }
 
-  //Flex
-  .--flex-direction-column {
-    flex-direction: column;
-  }
-
-  .--flex-direction-row {
-    flex-direction: row;
-  }
-
   .--justify-content-center {
     justify-content: center;
   }
@@ -31,18 +22,5 @@
 
   .--border-style-shadow {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  }
-
-  //Padding
-  .--padding-light {
-    padding: 8px;
-  }
-
-  .--padding-standard {
-    padding: 16px;
-  }
-
-  .--padding-heavy {
-    padding: 24px;
   }
 }

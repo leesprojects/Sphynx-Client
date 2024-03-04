@@ -1,4 +1,4 @@
-import { CardFlexDirection } from '@Components/card/card.component';
+import { ComponentFlexDirection, ComponentPadding } from '@App/@models/components';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -8,5 +8,18 @@ import { Component, Input } from '@angular/core';
   styleUrl: './feature-frame.component.scss'
 })
 export class FeatureFrameComponent {
-  @Input() flexDirection: CardFlexDirection = 'column';
+  @Input() flexDirection: ComponentFlexDirection = 'column';
+  @Input() padding: ComponentPadding = 'medium';
+
+  paddingRecord: Record<ComponentPadding, string> = {
+    none: '0',
+    small: '1rem',
+    medium: '2rem',
+    large: '3rem'
+  };
+
+  flexDirectionRecord: Record<ComponentFlexDirection, string> = {
+    column: 'column',
+    row: 'row'
+  };
 }

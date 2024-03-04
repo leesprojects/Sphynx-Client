@@ -3,7 +3,7 @@ import { HARDCODED_ROUTINES } from '../trainer-dashboard-hardcoded-data';
 import { IWorkout } from '../../../@models/trainer';
 
 @Component({
-  selector: 'app-trainer-routines',
+  selector: 'app-trainer-library-routines',
   templateUrl: './routines.component.html',
   styleUrl: './routines.component.scss'
 })

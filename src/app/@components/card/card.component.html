@@ -1,11 +1,8 @@
 <div class="card"
-  [class.--flex-direction-column]="flexDirection === 'column'"
-  [class.--flex-direction-row]="flexDirection === 'row'"
+  [style.flex-direction]="flexDirectionRecord[flexDirection]"
+  [style.padding]="paddingRecord[padding]"
   [class.--border-style-standard]="borderStyle === 'standard'"
   [class.--border-style-shadow]="borderStyle === 'shadow'"
-  [class.--padding-standard]="padding === 'standard'"
-  [class.--padding-light]="padding === 'light'"
-  [class.--padding-heavy]="padding === 'heavy'"
   [style.justify-content]="justifyContent"
   [style.align-items]="alignItems"
 >

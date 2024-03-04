@@ -3,7 +3,7 @@ import { HARDCODED_WORKOUTS } from '../trainer-dashboard-hardcoded-data';
 import { IExercise } from '../../../@models/trainer';
 
 @Component({
-  selector: 'app-trainer-workouts',
+  selector: 'app-trainer-library-workouts',
   templateUrl: './workouts.component.html',
   styleUrl: './workouts.component.scss'
 })

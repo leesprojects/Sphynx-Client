@@ -1,8 +1,6 @@
 <mat-sidenav-container class="sidenav-app-container" [hasBackdrop]="true">
-
   <mat-sidenav #sidenav mode="side"  [(opened)]="sidenavToggled" (openedChange)="onSidenavOpened()" (closed)="onSidenavClosed()">
     <div class="sidenav-popover">
-
       <div class="popover-navigation-buttons-container">
         @for (route of routesToRender; track $index) {
           <button mat-fab extended color="primary" (click)="onNavigationButtonClick(route)">
@@ -11,13 +9,12 @@
           </button>
         }
       </div>
-
     </div>
   </mat-sidenav>
 
   <mat-sidenav-content class="sidenav-app-content">
-    <app-top-toolbar class="toolbar" (toggleSidenav)="onToggleSidenav()"></app-top-toolbar>
-    <ng-content></ng-content>
+    <app-top-toolbar class="toolbar" (toggleSidenav)="onToggleSidenav()"/>
+    <ng-content/>
   </mat-sidenav-content>
 
 </mat-sidenav-container>

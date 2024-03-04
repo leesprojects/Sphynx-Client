@@ -4,21 +4,25 @@ import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
-  standalone: false,
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.scss'
 })
 export class SidenavComponent {
   private _routes = APP_ROUTES;
   routeToTitleMap = APP_ROUTE_TO_TITLE_MAP;
-
   routesToRender: Route[];
   sidenavToggled = false;
 
   constructor(
     private _router: Router
   ) {
-    this.routesToRender = this._routes.filter(route => !!route.component);
+    this.generateRoutesToRender();
+  }
+
+  private generateRoutesToRender(): void {
+    this.routesToRender = this._routes.filter(route => {
+      return route.component && this.routeToTitleMap.has(route.path ?? '')
+    });
   }
 
   onNavigationButtonClick(route: Route): void {

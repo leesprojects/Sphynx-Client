@@ -8,7 +8,6 @@ export interface IExampleDashboardCard {
 
 @Component({
   selector: 'app-dashboard',
-  standalone: false,
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
@@ -26,7 +25,10 @@ export class DashboardComponent {
     { title: 'Item 10', content: 'Content for Item 10' }
   ];
 
-  constructor(private _router: Router) {}
+  constructor(
+    private _router: Router
+  ) {
+  }
 
   navigateToTrainerDashboard(): void {
     this._router.navigate(['/trainer']);

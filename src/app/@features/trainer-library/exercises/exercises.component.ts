@@ -3,7 +3,7 @@ import { ExerciseDataService } from '@App/@data/exercises.data.service';
 import { IExercise } from '@App/@models/trainer';
 
 @Component({
-  selector: 'app-trainer-exercises',
+  selector: 'app-trainer-library-exercises',
   templateUrl: './exercises.component.html',
   styleUrl: './exercises.component.scss'
 })
