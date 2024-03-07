@@ -4,6 +4,11 @@ Created with Angular CLI 17.0.5 - Now ^17.2.0.
 
 # Heroku
 
+# AWS
+https://lee-stevens.dev
+https://master.d361fzfl2dsxbe.amplifyapp.com
+
+
 ### Commands
 
 ``` SHELL
