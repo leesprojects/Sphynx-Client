@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from 'environments/environment';
 
 export interface IExampleDashboardCard {
   title: string;
@@ -12,6 +13,8 @@ export interface IExampleDashboardCard {
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
+  envName = environment.ENV_NAME as string;
+
   exampleDashboardCards: IExampleDashboardCard[] = [
     { title: 'Item 1', content: 'Content for Item 1' },
     { title: 'Item 2', content: 'Content for Item 2' },

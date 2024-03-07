@@ -17,11 +17,9 @@ export class CardComponent {
   @Input() elevation: ComponentElevation = 'none';
   @Input() justifyContent: ComponentJustifyContent = 'flex-start';
   @Input() alignItems: ComponentJustifyContent = 'flex-start';
-
   @HostBinding('class.mat-elevation-z2') get isHighlightElevation() {
     return this.elevation === 'highlight';
   }
-
   @HostBinding('class.mat-elevation-z6') get isRaisedElevation() {
     return this.elevation === 'raised';
   }
