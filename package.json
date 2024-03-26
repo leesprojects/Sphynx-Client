@@ -2,8 +2,8 @@
   "name": "sphynx-client",
   "version": "0.0.1",
   "engines": {
-    "node": "18.19.0",
-    "npm": "9.1.2"
+    "node": "18.16.0",
+    "npm": "9.8.0"
   },
   "scripts": {
     "start": "ng serve  --configuration development",
