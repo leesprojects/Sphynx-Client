@@ -41,4 +41,32 @@
       </app-card>
     }
   </app-card>
+  <app-card>
+    <div cdkDropList
+    #exerciseADropList="cdkDropList"
+    [cdkDropListData]="exerciseTitle"
+    [cdkDropListConnectedTo]="workoutExerciseDropList"
+    (cdkDropListDropped)="drop($event)"
+    >
+    @for (card of exerciseTitle; track $index) {
+      <app-card class="card" cdkDrag>
+        <h3>{{ card }}</h3>
+      </app-card>
+    }
+    </div>
+  </app-card>
+  <app-card>
+    <div cdkDropList
+    #exerciseBDropList="cdkDropList"
+    [cdkDropListData]="workoutExerciseDropList"
+    [cdkDropListConnectedTo]="exerciseTitle"
+    (cdkDropListDropped)="drop($event)"
+    >
+    @for (card of workoutExerciseDropList; track $index) {
+      <app-card class="card" cdkDrag>
+        <h3>{{ card }}</h3>
+      </app-card>
+    }
+    </div>
+  </app-card>
 </ng-container>
